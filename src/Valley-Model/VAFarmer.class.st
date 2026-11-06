@@ -53,7 +53,7 @@ VAFarmer >> name: aString [
 VAFarmer >> pov [
 
 	<pov>
-	^ CMPointOfView color: (Color fromHexString: '3B2F2F') size: 0.5
+	^ CMPointOfView color: (Color fromHexString: '3E3A36') size: 0.9
 ]
 
 { #category : 'accessing' }

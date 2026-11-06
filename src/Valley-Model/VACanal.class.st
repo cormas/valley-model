@@ -37,7 +37,7 @@ VACanal >> isFlowing [
 VACanal >> pov [
 
 	<pov>
-	^ CMPointOfView color: (Color fromHexString: '1F5FBF') size: 0.15
+	^ CMPointOfView color: (Color fromHexString: '2F7FC1') size: 0.3
 ]
 
 { #category : 'pov' }
@@ -46,6 +46,6 @@ VACanal >> povWater [
 
 	<pov>
 	self isFlowing ifTrue: [
-		^ CMPointOfView color: (Color fromHexString: '1F5FBF') size: 0.4 ].
-	^ CMPointOfView color: (Color fromHexString: '9A9A9A') size: 0.08
+		^ CMPointOfView color: (Color fromHexString: '2F7FC1') size: 0.45 ].
+	^ CMPointOfView color: (Color fromHexString: 'A8A8A8') size: 0.12
 ]

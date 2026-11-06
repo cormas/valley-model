@@ -29,5 +29,5 @@ Class {
 VATrust >> pov [
 
 	<pov>
-	^ CMPointOfView color: (Color fromHexString: '8E44AD') size: 0.05
+	^ CMPointOfView color: (Color fromHexString: '8E5BA6') size: 0.1
 ]

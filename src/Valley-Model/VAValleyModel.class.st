@@ -47,7 +47,7 @@ Class {
 { #category : 'accessing' }
 VAValleyModel class >> aboutThisModel [
 
-	^ 'A small valley on a 10x10 grid. Irrigation canals carry water one way from a spring to the fields, one canal per step, and footpaths join fields both ways but never carry water. Three farmers stand on their fields, and a farmer gets water from any farmer they trust. It is the example model of the reference page on links on cormas.org.'
+	^ 'A small valley on a 30x30 grid. Irrigation canals carry water one way from a spring to the fields, one canal per step, and footpaths join fields both ways but never carry water. Three farmers stand on their fields, and a farmer gets water from any farmer they trust. It is the example model of the reference page on links on cormas.org.'
 ]
 
 { #category : 'examples' }
@@ -189,8 +189,8 @@ VAValleyModel >> field: aName [
 VAValleyModel >> fieldTable [
 	"The named fields: a name, then the row and the column of the field."
 
-	^ #( #( 'Spring' 2 2 ) #( 'A' 2 5 ) #( 'B' 2 9 ) #( 'C' 6 4 )
-	     #( 'D' 9 6 ) #( 'E' 9 9 ) )
+	^ #( #( 'Spring' 5 5 ) #( 'A' 5 14 ) #( 'B' 5 26 ) #( 'C' 17 11 )
+	     #( 'D' 26 17 ) #( 'E' 26 26 ) )
 ]
 
 { #category : 'map' }
@@ -204,8 +204,8 @@ VAValleyModel >> initValley [
 
 	<init>
 	self
-		createGridNumberOfRows: 10
-		numberOfColumns: 10
+		createGridNumberOfRows: 30
+		numberOfColumns: 30
 		neighbourhood: 4
 		closed: true.
 	self nameFields.

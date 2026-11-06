@@ -36,5 +36,5 @@ VAFootpath >> isDirected [
 VAFootpath >> pov [
 
 	<pov>
-	^ CMPointOfView color: (Color fromHexString: '8B6B3E') size: 0.08
+	^ CMPointOfView color: (Color fromHexString: '9B7653') size: 0.15
 ]

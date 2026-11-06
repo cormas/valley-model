@@ -5,7 +5,7 @@ I am a field of the valley. I hold water or I am dry, and a few of us have a nam
 
 - I know whether I have water, and whether I am the spring, which always has water.
 - I know my name, if I have one.
-- I show green when I have water, brown when I am dry, and blue when I am the spring.
+- I show fresh green when I have water, the color of wheat when I am dry, and clear blue when I am the spring.
 
 ## Collaborators:
 
@@ -74,13 +74,17 @@ VAField >> name: aString [
 
 { #category : 'pov' }
 VAField >> pov [
+	"A clear blue spring, fresh green fields with water, and soft wheat fields that are dry."
 
 	<pov>
-	isSpring ifTrue: [
-		^ CMPointOfView color: (Color fromHexString: '3A7BD5') ].
-	hasWater ifTrue: [
-		^ CMPointOfView color: (Color fromHexString: '7BB661') ].
-	^ CMPointOfView color: (Color fromHexString: 'C9A66B')
+	^ (CMPointOfView color: (Color fromHexString: (isSpring
+						     ifTrue: [ '4FA3D9' ]
+						     ifFalse: [
+								     hasWater
+									     ifTrue: [ 'A3CF7E' ]
+									     ifFalse: [ 'EFE3C4' ] ])))
+		  borderWidth: 0;
+		  yourself
 ]
 
 { #category : 'actions' }
